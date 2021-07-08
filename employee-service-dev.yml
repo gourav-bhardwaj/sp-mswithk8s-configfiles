@@ -1,2 +1,16 @@
 server:
   port: 8081
+  
+spring:
+ datasource:
+    url: jdbc:postgresql://localhost:5432/spdb
+    username: postgres
+    password: gobca
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+        
