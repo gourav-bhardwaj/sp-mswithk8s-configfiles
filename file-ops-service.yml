@@ -2,3 +2,22 @@ server:
   port: 8082
   servlet:
     context-path: /file-ops
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"    
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIAWPL4CZS5ASP6I6OY
+      secret-key: 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
+    region: us-east-2
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ 
