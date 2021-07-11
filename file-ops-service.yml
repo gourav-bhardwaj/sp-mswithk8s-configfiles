@@ -10,13 +10,6 @@ management:
         include:
         - "*"    
 
-cloud:
-  aws:
-    credentials:
-      access-key: AKIAWPL4CZS5ASP6I6OY
-      secret-key: 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
-    region: us-east-2
-    
 eureka:
   client:
     service-url:
